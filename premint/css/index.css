@@ -1,0 +1,130 @@
+@import url('/premint/css/common/common.css');
+
+html {
+  font-family: "Libre Baskerville", serif;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 15px;
+  z-index: 100;
+}
+
+header .header__logo {
+  display: flex;
+  align-items: center;
+  margin: 26px 0 23px 0;
+}
+
+header .header__logo img {
+  width: auto;
+  height: 22px;
+}
+
+header .header__menu {
+  display: flex;
+}
+
+header .header__menu .menu__item {
+  padding: 25px 22px 18px 22px;
+}
+
+header .header__menu .menu__item a {
+  font-size: 18px;
+  color: var(--color-white);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#brand, #product, #contact {
+  height : 100vh;
+}
+
+#brand .brand__image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#product .product__image {
+  display: flex;
+}
+
+#product .product__image img {
+  flex: 1;
+  width: calc(100vw / 2);
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+#best {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 100px 0;
+}
+
+#best h2 {
+  font-size: 24px;
+}
+
+#contact .contact__image {
+  display: flex;
+}
+
+#contact .contact__image img {
+  display: flex;
+  width: calc(100vw / 2);
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+footer {
+  padding: 30px 0 50px 0;
+}
+
+nav .nav__menu {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-gray-600);
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+nav .nav__menu .menu__item {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 15px;
+}
+
+nav .nav__menu .menu__item h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-gray-100);
+  margin-bottom: 20px;
+}
+
+nav .nav__menu .menu__item p {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: var(--color-gray-300);
+  margin-bottom: 15px;
+}
+
+nav .nav__menu .menu__item img {
+  width: 24px;
+  height: 24px;
+}
+
+
