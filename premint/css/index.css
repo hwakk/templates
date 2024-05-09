@@ -5,6 +5,7 @@
 body {
   font-family: "Libre Baskerville", serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 .section__container {
@@ -156,17 +157,93 @@ body {
   margin-right: calc((100vw - 1600px) / 2);
 }
 
-
 #best {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
   padding: 100px 0;
 }
 
 #best h2 {
   font-size: 24px;
+  color: var(--color-gray-100);
+  text-transform: uppercase;
+}
+
+.swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px !important;
+  margin-top: -50px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute !important;
+  top: 33px !important;
+  width: 50px !important;
+  height: 27px !important;
+  background-image: url('/premint/images/arrow_swiper.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 35px;
+  transition: all 0.3s;
+
+  &::after {
+    content: '' !important;
+  }
+
+  &:hover {
+    background-image: url('/premint/images/arrow_swiper_hover.png') !important;
+  }
+}
+
+.swiper-button-prev {
+  left: unset !important;
+  right: 90px !important;
+  transform: rotate(180deg);
+}
+
+#best .product .product__text {
+  padding-top: 20px;
+}
+
+#best .product .product__text > h3 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 16px;
+  font-weight: lighter;
+  color: var(--color-gray-300); 
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#best .product .product__text > p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-gray-100);
 }
 
 #contact {

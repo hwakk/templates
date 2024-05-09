@@ -1,6 +1,7 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 /* normalize */
 @import url('/premint/css/common/normalize.css');
@@ -69,6 +70,9 @@ a {
 
 h1,
 h2,
+h3,
+h4,
+h5,
 h6,
 p {
   padding: 0;
