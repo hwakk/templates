@@ -1,0 +1,130 @@
+footer {
+  line-height: 1.6;
+  background: linear-gradient(to bottom, rgba(255, 249, 236, 0) 0%, #fff9ec 100%);
+  padding: 30px 0 50px 0;
+  z-index: 0;
+}
+
+footer .footer__container {
+   max-width: 1630px;
+   margin: 0 auto;
+}
+
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-gray-600);
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.footer__menu .menu__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 15px;
+}
+
+.footer__menu .menu__item h2 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-gray-100);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer__menu .menu__item a {
+  width: 100%;
+  font-size: 18px;
+  color: var(--color-gray-300);
+  text-align: center;
+  transition: all 0.2s;
+
+  &:hover {
+    color: var(--color-main);
+  }
+}
+
+.footer__menu .menu__item a:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+#instagram {
+  font-size: 24px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Pretendard', sans-serif;
+  color: var(--color-gray-300);
+}
+
+.footer__info .info__logo {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+
+.footer__info .info__logo img {
+  height: 25px;
+  object-fit: contain;
+}
+
+.footer__info .info__privacy {
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.footer__info .info__privacy ul {
+  padding-bottom: 20px;
+}
+
+.footer__info .info__privacy ul li a {
+  font-weight: 700;
+  color: var(--color-gray-300);
+}
+
+.footer__info .info__copyright ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--color-gray-300);
+}
+
+.footer__info .info__copyright ul li {
+  font-size: 14px;
+}
+
+.footer__info .info__copyright ul li:not(:last-child)::after {
+  content: '|';
+  color: var(--color-gray-600);
+  padding: 0 20px;
+}
+
+.footer__info .info__copyright ul li span b {
+  padding-right: 22px;
+}
+
+.footer__info .info__copyright {
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.footer__info .info__copyright p {
+  font-size: 16px;
+  font-style: light;
+  color: var(--color-gray-400);
+  margin-top: 20px;
+}
