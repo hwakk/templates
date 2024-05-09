@@ -66,6 +66,118 @@
 }
 
 #product {
-  min-height: 100vh;
   padding: 100px 0 150px;
+}
+
+#product .image__wrap {
+  max-width: 1630px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+#product .product__toothbrush > div,
+#product .product__toothpaste > div {
+  padding-bottom: 100px;
+}
+
+#product .content__text {
+  max-width: 1630px;
+  text-align: center;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+#product .text1 {
+  font-size: 20px;
+  color: var(--color-main);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#product .text2 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--color-gray-100);
+  margin-bottom: 50px;
+}
+
+#product .text3 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 24px;
+  color: var(--color-gray-100);
+  text-align: left;
+  margin-top: 30px;
+}
+
+#product .content1 .content__image {
+  position: relative;
+  max-width: 898px;
+  padding: 0 120px;
+  margin: 0 auto;
+}
+
+.content__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+#product .content1 .content__image .image__small {
+  position: absolute;
+  top: 240px;
+  right: 0;
+}
+
+#product .content1 .content__image .image__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#product .content1 .content__image .image__star {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  transform: translateX(50%);
+}
+ 
+#product .content2 .content__image {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -50px;
+}
+
+#product .content2 .content__image .image__small {
+  flex: 33.33333%;
+  position: relative;
+  padding: 0 50px;
+  margin-top: 200px;
+}
+
+#product .content2 .content__image .image__sun {
+  position: absolute;
+  top: -80px;
+  right: 59px;
+}
+
+#product .content2 .content__image .image__big {
+  flex: 66.66666%;
+  position: relative;
+  padding: 0 50px;
+}
+
+#product .content2 .content__image .image__premint {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  transform: translateY(-50%);
+}
+
+#product .product__toothpaste {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 57%, #fff 100%), linear-gradient(to bottom, #fff9ec, #fff9ec);
+  padding-top: 100px;
+}
+
+#product .product__toothpaste .content2 {
+  padding-bottom: 0;
 }
