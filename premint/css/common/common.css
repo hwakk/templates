@@ -37,6 +37,9 @@ body {
   position: relative;
   width: 100%;
   margin: 0 auto;
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 figure {

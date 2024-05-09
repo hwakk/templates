@@ -1,0 +1,71 @@
+@import url('/premint/css/common/common.css');
+@import url('/premint/css/header.css');
+@import url('/premint/css/footer.css');
+
+#banner {
+  height: 600px;
+  background-image: url('/premint/images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: pulseBgSlow 20s linear infinite;
+}
+
+@keyframes pulseBgSlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+#banner {
+  display: flex;
+  align-items: flex-end;
+}
+
+#banner .banner__title {
+  width: 100%;
+  max-width: 1630px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+#banner .banner__title h1 {
+  position: relative;
+  font-size: 96px;
+  font-weight: bold;
+  color: var(--color-white);
+  text-shadow: 0 6px 13px rgba(0, 0, 0, 0.2), 0 23px 23px rgba(0, 0, 0, 0.17), 0 52px 31px rgba(0, 0, 0, 0.1), 0 92px 37px rgba(0, 0, 0, 0.03), 0 144px 40px rgba(0, 0, 0, 0);
+  padding-bottom: 50px;
+}
+
+#banner .banner__title h1::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -80px;
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-image: url('/premint/images/sub_banner_img.png');
+  background-size: cover;
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#product {
+  min-height: 100vh;
+  padding: 100px 0 150px;
+}

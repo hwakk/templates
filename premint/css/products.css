@@ -1,0 +1,15 @@
+@import url('/premint/css/common/common.css');
+@import url('/premint/css/header.css');
+@import url('/premint/css/footer.css');
+
+header {
+  background-color: var(--color-sub);
+}
+
+.header__menu .menu__item > a {
+  color: var(--color-main);
+}
+
+main {
+  padding-top: 100px;
+}
