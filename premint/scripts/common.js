@@ -6,10 +6,10 @@ const scrollTop = document.querySelector('#scrollTop');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 100) {
     header.classList.add('scrolled');
-    logo.attributes.src.value = '/premint/images/logo.png';
+    logo.src = '/premint/images/logo.png';
   } else {
     header.classList.remove('scrolled');
-    logo.attributes.src.value = '/premint/images/logo_white.png';
+    logo.src = '/premint/images/logo_white.png';
   }
 });
 
