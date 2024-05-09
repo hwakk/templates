@@ -1,8 +1,11 @@
 :root {
   --color-black: #000;
   --color-white: #fff;
+  --color-main: #fc0328;
+  --color-sub: #fff9ec;
 
   --color-gray-100: #424242;
   --color-gray-300: #757575;
+  --color-gray-400: #bdbdbd;
   --color-gray-600: #e0e0e0;
 }

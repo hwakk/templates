@@ -1,5 +1,6 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 /* normalize */
 @import url('/premint/css/common/normalize.css');
@@ -13,6 +14,21 @@
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(163, 163, 163, 0.68);
+  background-clip: padding-box;
+  border: 3px solid transparent;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -20,12 +36,7 @@ html {
 body {
   position: relative;
   width: 100%;
-  line-height: 1.6;
   margin: 0 auto;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 figure {
@@ -55,6 +66,7 @@ a {
 
 h1,
 h2,
+h6,
 p {
   padding: 0;
   margin: 0;
