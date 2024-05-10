@@ -10,18 +10,6 @@
   animation: pulseBgSlow 20s linear infinite;
 }
 
-@keyframes pulseBgSlow {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
 #banner {
   display: flex;
   align-items: flex-end;
@@ -54,15 +42,7 @@
   background-image: url('/premint/images/sub_banner_img.png');
   background-size: cover;
   animation: rotate 8s linear infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  -webkit-animation: rotate 8s linear infinite;
 }
 
 #product {
