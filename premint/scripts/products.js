@@ -1,4 +1,4 @@
-const list = document.querySelector('.product__list');
+const list = document.querySelector('.products__list');
 const categorys = document.querySelectorAll('#category>li');
 const count = document.querySelector('#count');
 
@@ -48,12 +48,12 @@ function getProducts(products) {
   
   products.forEach((product) => {
     htmls += `
-      <li class="product__item" data-type="${product.type}">
-        <a href="/premint/product.html" class="product">
+      <li class="products__item" data-type="${product.type}">
+        <a href="/premint/product.html?idx=${product.id}" class="product">
           <figure>
             <img src="${imageBasePath}${product.image}" alt="${brandNameEN} ${product.en}">
           </figure>
-          <div class="product__text">
+          <div class="products__text">
             <h3>${brandNameEN} ${product.en}</h3>
             <p>${brandNameKO} ${product.ko}</p>
           </div>

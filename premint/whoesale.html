@@ -5,10 +5,12 @@
   <link rel="icon" href="/premint/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/premint/css/whoesale.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="/premint/scripts/common.js" defer></script>
+  <script src="/premint/scripts/whoesale.js" defer></script>
   <title>프레민트 - WHOESALE</title>
 </head>
 <body>
-  <header>
+  <header class="fixed">
     <div class="header__container">
       <h1 class="header__logo">
         <a href="/premint">
@@ -54,7 +56,60 @@
     </div>
   </header>
   <main>
-    whoesale
+    <seciton id="whoesale">
+      <div class="whoesale__title">
+        <h1>WHOESALE</h1>
+      </div>
+      <form class="whoesale__form" action="/" method="post" enctype="multipart/form-data">
+        <p><span class="required">*</span> 표시는 필수 입력 사항입니다.</p>
+        <div class="form__text">
+          <div class="text__wrap">
+            <label for="name" class="title">성함<span class="required">*</span></label>
+            <input id="name" type="text" name="name" placeholder="성함을 입력해주세요." />
+          </div>
+          <div class="text__wrap">
+            <label for="tel" class="title">연락처<span class="required">*</span></label>
+            <input id="tel" type="tel" name="tel" placeholder="연락처를 입력해주세요." />
+          </div>
+          <div class="text__wrap">
+            <label for1="email" class="title">이메일</label>
+            <input id="email" type="email" name="email" placeholder="이메일을 입력해주세요." />
+          </div>
+          <div class="text__wrap">
+            <label for="type" class="title">문의 유형<span class="required">*</span></label>
+            <select id="type" name="type">
+              <option value="" selected disabled hidden>문의 유형을 선택해주세요.</option>
+              <option value="문의">문의</option>
+              <option value="제휴문의">제휴문의</option>
+              <option value="대량구매">대량구매</option>
+            </select>
+          </div>
+          <div class="text__wrap content">
+            <label for="content" class="title">내용<span class="required">*</span></label>
+            <textarea id="content" name="content"></textarea>
+          </div>
+        </div>
+        <div class="form__agreement">
+          <div class="text__wrap">
+            <p class="title"><span class="required">*</span>개인정보 수집이용에 대한 동의</p>
+            <button><a href="/premint/privacy.html" target="_blank">자세히보기</a></button>
+          </div>
+          <div class="button__wrap">
+            <label for="agree">
+              <input id="agree" type="radio" name="privacy" />
+              동의
+            </label>
+            <label for="disagree">
+              <input id="disagree" type="radio" name="privacy" />
+              비동의
+            </label>
+          </div>
+        </div>
+        <div class="form__submit">
+          <button type="submit">문의하기</button>
+        </div>
+      </form>
+    </seciton>
   </main>
   <footer>
     <div class="footer__container">

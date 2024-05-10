@@ -29,8 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Change header background on scroll
 window.addEventListener('scroll', () => {
-  if (header.classList.contains('fixed')) return;
-
   if (window.scrollY > 100) {
     if (header.classList.contains('scrolled')) return;
     header.classList.add('scrolled');
@@ -38,7 +36,9 @@ window.addEventListener('scroll', () => {
   } else {
     if (!header.classList.contains('scrolled')) return;
     header.classList.remove('scrolled');
-    logo.src = '/premint/images/logo_white.png';
+    let color = '';
+    if (!header.classList.contains('fixed')) color = '_white';
+    logo.src = `/premint/images/logo${color}.png`;
   }
 });
 

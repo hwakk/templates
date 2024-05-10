@@ -8,7 +8,7 @@ function getProducts() {
   products.forEach((product) => {
     htmls.push(`
       <div class="swiper-slide" data-type="${product.type}">
-        <a href="/premint/product.html" class="product">
+        <a href="/premint/product.html?idx=${product.id}" class="product">
           <figure>
             <img src="${imageBasePath}${product.image}" alt="${brandNameEN} ${product.en}">
           </figure>
