@@ -10,7 +10,7 @@ function getProducts() {
       <div class="swiper-slide" data-type="${product.type}">
         <a href="/premint/product.html?idx=${product.id}" class="product">
           <figure>
-            <img src="${imageBasePath}${product.image}" alt="${brandNameEN} ${product.en}">
+            <img src="${imageBasePath}${product.thumbnail}" alt="${brandNameEN} ${product.en}">
           </figure>
           <div class="product__text">
             <h3>${brandNameEN} ${product.en}</h3>

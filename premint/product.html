@@ -3,12 +3,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/premint/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/premint/css/products.css">
+  <link rel="stylesheet" href="/premint/css/product.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="/premint/scripts/common.js" defer></script>
+  <script src="/premint/scripts/product.js" defer></script>
   <title>프레민트 - PRODUCTS</title>
 </head>
 <body>
-  <header>
+  <header class="fixed">
     <div class="header__container">
       <h1 class="header__logo">
         <a href="/premint">
@@ -34,7 +36,7 @@
       <div class="quick__menu">
         <ul>
           <li>
-            <a href="https://smartstore.naver.com/premint">
+            <a href="https://smartstore.naver.com/premint" target="_blank">
               <i id="store" class="ri-shopping-bag-fill"></i>
               <p>STORE</p>
             </a>
@@ -54,7 +56,34 @@
     </div>
   </header>
   <main>
-    product
+    <section id="left">
+      <div id="images"></div>
+    </section>
+    <section id="right">
+      <div id="info">
+        <div class="title__wrap">
+          <p class="title en"></p>
+          <p class="title ko"></p>
+        </div>
+        <div class="price__wrap">
+          <span class="unit">KRW</span><span class="price"></span>
+        </div>
+        <div class="button__wrap">
+          <button class="store">
+            <a href="https://smartstore.naver.com/premint" target="_blank">
+              <i class="ri-shopping-bag-fill"></i>
+              <span>네이버 스토어 바로가기</span>
+            </a>
+          </button>
+          <button class="prev">
+            <a href="/premint/products.html">
+              <i class="ri-arrow-left-line"></i>
+              <span>목록</span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="footer__container">
@@ -72,14 +101,14 @@
         </li>
         <li class="menu__item">
           <h2>STORE</h2>
-          <a href="https://smartstore.naver.com/premint">
+          <a href="https://smartstore.naver.com/premint" target="_blank">
             NAVER
             <i class="ri-arrow-right-up-line"></i>
           </a>  
         </li>
         <li class="menu__item">
           <h2>FOLLOW US</h2>
-          <a href="https://www.instagram.com/premint_official/">
+          <a href="https://www.instagram.com/premint_official/" target="_blank">
             <i id="instagram" class="ri-instagram-line"></i>
           </a>
         </li>

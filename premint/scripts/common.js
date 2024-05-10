@@ -1,19 +1,19 @@
 // dummy data
-const products_json = `[
-  { "id": "1", "type": "1", "image": "product_1.jpg", "en": "Toothpaste Original mint", "ko": "오리지널 민트" },
-  { "id": "2", "type": "1", "image": "product_2.jpg", "en": "Toothpaste Strong mint", "ko": "스트롱 민트" },
-  { "id": "3", "type": "1", "image": "product_3.jpg", "en": "Toothpaste Yuza mint", "ko": "유자 민트" },
-  { "id": "4", "type": "1", "image": "product_4.jpg", "en": "Toothpaste Whitening mint", "ko": "화이트닝 민트" },
-  { "id": "5", "type": "1", "image": "product_5.jpg", "en": "Toothpaste Original mint", "ko": "오리지널 민트 30g" },
-  { "id": "6", "type": "2", "image": "product_6.jpg", "en": "Toothbrush Red", "ko": "칫솔 [레드]" },
-  { "id": "7", "type": "2", "image": "product_7.jpg", "en": "Toothbrush Brown", "ko": "칫솔 [브라운]" },
-  { "id": "8", "type": "2", "image": "product_8.jpg", "en": "Toothbrush Green", "ko": "칫솔 [그린]" },
-  { "id": "9", "type": "2", "image": "product_9.jpg", "en": "Toothbrush Pink", "ko": "칫솔 [핑크]" },
-  { "id": "10", "type": "2", "image": "product_10.jpg", "en": "Toothbrush Ivory(Sliver)", "ko": "칫솔 [아이보리 실버]" },
-  { "id": "11", "type": "2", "image": "product_11.jpg", "en": "Toothbrush Ivory(Blue)", "ko": "칫솔 [아이보리 블루]" },
-  { "id": "12", "type": "2", "image": "product_12.jpg", "en": "Toothbrush Black", "ko": "칫솔 [블랙]" }
+const productsJson = `[
+  { "id": "1", "type": "1", "thumbnail": "product_1.jpg", "en": "Toothpaste Original mint", "ko": "오리지널 민트", "price": "8500" },
+  { "id": "2", "type": "1", "thumbnail": "product_2.jpg", "en": "Toothpaste Strong mint", "ko": "스트롱 민트", "price": "9000" },
+  { "id": "3", "type": "1", "thumbnail": "product_3.jpg", "en": "Toothpaste Yuza mint", "ko": "유자 민트", "price": "9000" },
+  { "id": "4", "type": "1", "thumbnail": "product_4.jpg", "en": "Toothpaste Whitening mint", "ko": "화이트닝 민트", "price": "10500" },
+  { "id": "5", "type": "1", "thumbnail": "product_5.jpg", "en": "Toothpaste Original mint", "ko": "오리지널 민트 30g", "price": "4000" },
+  { "id": "6", "type": "2", "thumbnail": "product_6.jpg", "en": "Toothbrush Red", "ko": "칫솔 [레드]", "price": "8400" },
+  { "id": "7", "type": "2", "thumbnail": "product_7.jpg", "en": "Toothbrush Brown", "ko": "칫솔 [브라운]", "price": "8400" },
+  { "id": "8", "type": "2", "thumbnail": "product_8.jpg", "en": "Toothbrush Green", "ko": "칫솔 [그린]", "price": "8400" },
+  { "id": "9", "type": "2", "thumbnail": "product_9.jpg", "en": "Toothbrush Pink", "ko": "칫솔 [핑크]", "price": "8400" },
+  { "id": "10", "type": "2", "thumbnail": "product_10.jpg", "en": "Toothbrush Ivory(Sliver)", "ko": "칫솔 [아이보리 실버]", "price": "8400" },
+  { "id": "11", "type": "2", "thumbnail": "product_11.jpg", "en": "Toothbrush Ivory(Blue)", "ko": "칫솔 [아이보리 블루]", "price": "8400" },
+  { "id": "12", "type": "2", "thumbnail": "product_12.jpg", "en": "Toothbrush Black", "ko": "칫솔 [블랙]", "price": "8400" }
 ]`;
-const products = JSON.parse(products_json);
+const products = JSON.parse(productsJson);
 const brandNameEN = "PREMINT";
 const brandNameKO = "프레민트";
 const imageBasePath = "/premint/images/";

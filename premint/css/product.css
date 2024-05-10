@@ -1,0 +1,112 @@
+@import url('/premint/css/common/common.css');
+@import url('/premint/css/header.css');
+@import url('/premint/css/footer.css');
+
+header {
+  background-color: var(--color-sub);
+}
+
+.header__menu .menu__item > a {
+  color: var(--color-main);
+}
+
+main {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+section {
+  flex: 0 0 50%;
+  width: 50%;
+}
+
+#images > img {
+  width: 100%;
+}
+
+#right {
+  display: flex;
+  justify-content: center;
+  color: var(--color-gray-300);
+  padding: 0 30px;
+}
+
+#info {
+  position: sticky;
+  top: 50%;
+  transform: translateY(calc(-50% + 0.5px));
+  width: 700px;
+  height: 350px;
+  margin-bottom: -175px;
+}
+
+.title__wrap {
+  margin-bottom: 30px;
+}
+
+.title.en {
+  font-size: 16px;
+}
+
+.title.ko {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-gray-100);
+  margin-top: 5px;
+}
+
+.price__wrap {
+  display: flex;
+  align-items: baseline;
+  border-top: 1px solid var(--color-gray-600);
+  padding: 30px 0 50px 0;
+}
+
+.unit {
+  padding-right: 0.5rem;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-gray-100);
+}
+
+.button__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button__wrap > button {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 18px;
+  transition: all 0.3s;
+  
+  &:hover {
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.05), 8px 8px 11px 0 rgba(0, 0, 0, 0.03), 17px 17px 15px 0 rgba(0, 0, 0, 0.02), 30px 31px 17px 0 rgba(0, 0, 0, 0.01), -10px -6px 17px 0 rgba(0, 0, 0, 0.01);
+  }
+}
+
+button > a {
+  display: block;
+  padding: 18px 0;
+}
+
+.store > a {
+  color: var(--color-main);
+  background-color: var(--color-sub);
+  border: 1px solid var(--color-main);
+}
+
+.prev > a {
+  color: var(--color-gray-300);
+  background-color: transparent;
+  border: 1px solid var(--color-gray-400);
+}
+
+button > a > span {
+  font-weight: bold;
+}
