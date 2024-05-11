@@ -3,16 +3,13 @@
 @import url('/premint/css/footer.css');
 
 #banner {
+  display: flex;
+  align-items: flex-end;
   height: 600px;
   background-image: url('/premint/images/banner.png');
   background-repeat: no-repeat;
   background-size: cover;
   animation: pulseBgSlow 20s linear infinite;
-}
-
-#banner {
-  display: flex;
-  align-items: flex-end;
 }
 
 #banner .banner__title {
@@ -160,4 +157,110 @@
 
 #product .product__toothpaste .content2 {
   padding-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  #banner {
+    height: 200px;
+  }
+
+  #banner .banner__title {
+    padding: 0 30px;
+  }
+
+  #banner .banner__title h1 {
+    font-size: 48px;
+    padding-bottom: 30px;
+  }
+
+  #banner .banner__title h1::before {
+    left: -15px;
+    width: 80px;
+    height: 80px;
+  }
+
+  #product {
+    padding: 30px 0;
+  }
+
+  #product .text1 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  #product .text2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  #product .text3 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  #product .product__toothbrush .content1 .text3 {
+    margin-top: 0;
+  }
+
+  #product .product__toothbrush > div,
+  #product .product__toothpaste > div {
+    padding-bottom: 50px;
+  }
+
+  #product .content1 .content__image {
+    padding: 0;
+  }
+
+  #product .content1 .content__image .image__big {
+    padding-left: 60px;
+  }
+
+  #product .content1 .content__image .image__small {
+    position: relative;
+    top: -30px;
+    width: 80%;
+  }
+
+  #product .content1 .content__image .image__text {
+    left: 0;
+  }
+
+  #product .content1 .content__image .image__text img {
+    width: 45px;
+  }
+
+  #product .content2 .content__image {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #product .content2 .content__image .image__big {
+    order: 1;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+
+  #product .content2 .content__image .image__small {
+    order: 2;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  #product .content2 .content__image .image__sun {
+    top: -40px;
+    left: 10px;
+    right: unset;
+  }
+
+  #product .product__toothpaste {
+    padding-top: 50px;
+  }
+
+  #product .content2 .content__image .image__premint {
+    right: 0;
+  }
+
+  #product .content2 .content__image .image__premint img {
+    height: 80px;
+  }
 }
