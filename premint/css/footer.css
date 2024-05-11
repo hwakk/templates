@@ -42,6 +42,7 @@ footer .footer__container {
   font-size: 18px;
   color: var(--color-gray-300);
   text-align: center;
+  margin-bottom: 15px;
   transition: all 0.2s;
 
   &:hover {
@@ -49,8 +50,8 @@ footer .footer__container {
   }
 }
 
-.footer__menu .menu__item a:not(:last-child) {
-  margin-bottom: 15px;
+.footer__menu .menu__item a:last-child {
+  margin-bottom: 0;
 }
 
 #instagram {
@@ -89,6 +90,7 @@ footer .footer__container {
 }
 
 .footer__info .info__privacy ul li a {
+  font-size: 13px;
   font-weight: 700;
   color: var(--color-gray-300);
 }
@@ -98,7 +100,6 @@ footer .footer__container {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
   color: var(--color-gray-300);
 }
 
@@ -124,7 +125,51 @@ footer .footer__container {
 
 .footer__info .info__copyright p {
   font-size: 16px;
-  font-style: light;
   color: var(--color-gray-400);
   margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+  footer {
+    padding: 30px 0;
+  }
+
+  .footer__menu {
+    gap: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer__menu .menu__item {
+    flex: 1 0 45%;
+    max-width: 50%;
+  }
+
+  .footer__menu .menu__item h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer__menu .menu__item a {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .footer__info .info__logo {
+    display: none;
+  }
+
+  #instagram {
+    font-size: 2.4rem;
+  }
+
+  .footer__info .info__copyright ul li {
+    display: flex;
+    font-size: 12px;
+  }
+
+  .footer__info .info__copyright p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
 }

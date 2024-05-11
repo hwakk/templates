@@ -24,7 +24,12 @@ const scrollTop = document.querySelector('#scrollTop');
 const footer = document.querySelector('footer');
 
 window.addEventListener('DOMContentLoaded', () => {
+  setHeaderLogo();
   getMainHeight();
+});
+
+window.addEventListener('resize', () => {
+  setHeaderLogo();
 });
 
 // Change header background on scroll
@@ -37,7 +42,7 @@ window.addEventListener('scroll', () => {
     if (!header.classList.contains('scrolled')) return;
     header.classList.remove('scrolled');
     let color = '';
-    if (!header.classList.contains('fixed')) color = '_white';
+    if (!header.classList.contains('fixed') && !header.classList.contains('mobile')) color = '_white';
     logo.src = `/premint/images/logo${color}.png`;
   }
 });
@@ -47,6 +52,18 @@ scrollTop.addEventListener('click', (e) => {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// Set header logo
+function setHeaderLogo() {
+  if (header.classList.contains('scrolled') || header.classList.contains('fixed')) return;
+  if (window.innerWidth > 992)  {
+    header.classList.remove('mobile');
+    logo.src = `/premint/images/logo_white.png`;
+  } else {
+    header.classList.add('mobile');
+    logo.src = '/premint/images/logo.png';
+  }
+}
 
 // Set initial main height
 function getMainHeight() {

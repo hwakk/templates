@@ -57,6 +57,9 @@ body {
 }
 
 #brand .content.left a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-weight: bold;
   color: var(--color-white);
   transition: all 0.3s;
@@ -84,7 +87,7 @@ body {
   gap: 5px;
   font-size: 12px;
   text-shadow: 0 3px 24px rgba(0, 0, 0, 0.13);
-  animation: scrollDown 1s linear infinite;
+  animation: scrollDown 1.2s linear infinite;
 }
 
 @keyframes scrollDown {
@@ -155,6 +158,12 @@ body {
 
 #product .content.right a {
   margin-right: calc((100vw - 1600px) / 2);
+}
+
+#product .text__wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 #best {
@@ -299,4 +308,88 @@ body {
 #contact .content a p {
   width: 100%;
   padding: 0 15px;
+}
+
+@media (max-width: 992px) {
+  #brand .section__container {
+    bottom: 30px;
+  }
+
+  #brand .content.left {
+    font-size: 20px;
+  }
+
+  #product, #contact {
+    flex-direction: column;
+  }
+
+  #product {
+    height: auto;
+  }
+
+  #product .content.left,
+  #product .content.right {
+    justify-content: flex-start;
+    background-position: center;
+  }
+
+  #product .content a {
+    flex-wrap: wrap;
+    align-items: flex-end;
+    height: 100vh;
+    padding-bottom: 30px;
+  }
+
+  #product .content.left a {
+    margin-left: 15px;
+  }
+
+  #product .content.right a {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+
+  #best {
+    padding: 50px 0;
+  }
+
+  #best h2 {
+    font-size: 20px;
+  }
+
+  #best .product .product__text > h3 {
+    font-size: 12px;
+  }
+
+  #best .product .product__text > p {
+    font-size: 14px;
+  }
+
+  .swiper {
+    padding-top: 115px !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 100px !important;
+    width: 40px !important;
+    height: 20px !important;
+  }
+
+  .swiper-button-prev {
+    right: 35px !important;
+  }
+  
+  .swiper-button-next {
+    right: -20px !important;
+  }
+
+  #contact {
+    height: auto;
+  }
+
+  #contact .content a {
+    height: 100vh;
+    font-size: 19.2px;
+  }
 }
