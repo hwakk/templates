@@ -82,6 +82,12 @@ p {
   word-break: keep-all;
 }
 
+.fade-in {
+  position: relative;
+  top: 80px;
+  opacity: 0;
+}
+
 @keyframes pulseBgSlow {
   0% {
     background-position: 0% 0%;
@@ -100,5 +106,16 @@ p {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    top: 80px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
   }
 }

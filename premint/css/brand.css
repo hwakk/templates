@@ -47,6 +47,7 @@
 }
 
 #product .image__wrap {
+  position: relative;
   max-width: 1630px;
   padding: 0 15px;
   margin: 0 auto;

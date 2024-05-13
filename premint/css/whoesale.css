@@ -208,7 +208,8 @@ main {
 }
 
 .form__submit button {
-  width: 470px;
+  width: 100%;
+  max-width: 470px;
   font-size: 18px;
   font-weight: 600;
   color: var(--color-main);
@@ -216,4 +217,108 @@ main {
   background-color: var(--color-sub);
   border: 1px solid var(--color-main);
   padding: 18px 0;
+
+  &:hover {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02), 0 4px 4px 0 rgba(0, 0, 0, 0.02), 0 10px 6px 0 rgba(0, 0, 0, 0.01), 0 18px 7px 0 rgba(0, 0, 0, 0.01), 0 28px 8px 0 rgba(0, 0, 0, 0.01), -4px -8px 17px 0 rgba(0, 0, 0, 0.03);
+  }
+}
+
+@media (max-width: 992px) {
+  main {
+    padding-top: 50px;
+  }
+
+  #whoesale {
+    padding: 30px 15px;
+  }
+
+  .whoesale__title {
+    padding: 10px 0 40px;
+  }
+
+  .whoesale__title > h1 {
+    font-size: 20px;
+  }
+
+  .whoesale__title > h1::after {
+    top: -25px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .form__text {
+    gap: 10px;
+  }
+
+  .text__wrap {
+    flex: 1 0 100%;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .text__wrap .title {
+    font-size: 16px;
+  }
+  
+  .text__wrap label {
+    width: 100%;
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid var(--color-gray-400);
+    padding: 10px 0 9px;
+  }
+
+  .text__wrap input,
+  .text__wrap select {
+    width: 100%;
+    /* height: 60px; */
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px 15px 9px 15px;
+  }
+
+  .text__wrap.content {
+    padding: 0 15px;
+  }
+
+  .text__wrap.content label {
+    padding: 10px 0 9px;
+  }
+
+  .whoesale__form > p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form__agreement {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .form__agreement .text__wrap {
+    flex-direction: row;
+  }
+
+  .form__agreement .text__wrap .title,
+  .form__agreement label {
+    font-size: 14px;
+  }
+
+  .form__agreement button > a {
+    width: 80px;
+    font-size: 11px;
+    line-height: 26px;
+    margin-left: 10px;
+  }
+
+  .button__wrap {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .form__submit {
+    margin-top: 30px;
+  }
 }
