@@ -84,6 +84,10 @@ header {
   display: none;
 }
 
+.mobile__menu {
+  display: none;
+}
+
 .quick__menu {
   position: fixed;
   bottom: 30px;
@@ -203,6 +207,65 @@ header.scrolled #scrollTop {
     object-fit: contain;
   }
 
+  .mobile__menu.open {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 60%;
+    height: 100vh;
+    z-index: 100;
+  }
+  
+  .mobile__menu.open::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+  }
+  
+  .menu__wrap {
+    position: relative;
+    height: 100%;
+    background-color: var(--color-white);
+    z-index: 100;
+  }
+
+  .mobile__menu button {
+    cursor: pointer;
+  }
+
+  .mobile__menu button > i {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 1;
+    padding: 13px;
+  }
+
+  .mobile__menu nav {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .mobile__menu nav > ul > li {
+    border-bottom: 1px solid var(--color-gray-600);
+  }
+
+  .mobile__menu nav > ul > li > a {
+    display: block;
+    font-size: 16px;
+    letter-spacing: -1px;
+    padding: 13px 30px 13px 20px;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  
   .quick__menu {
     bottom: 15px;
     right: 15px;

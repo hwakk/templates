@@ -1,6 +1,8 @@
 // search params 가져오기
 const params = new URL(document.location).searchParams;
 let idx = params.get("idx");
+const main = document.querySelector('main');
+const buttonWrap = document.querySelector('.button__wrap');
 
 // dummy data
 const productsContentJson = `[
@@ -24,8 +26,21 @@ let product = products.find((product) => product.id === idx);
 // content 정보 추가
 product = { ...product, ...productsContent.find((content) => content.id === idx) };
 
-getImages();
-getInfo();
+window.addEventListener('DOMContentLoaded', () => {
+  getImages();
+  getInfo();  
+});
+
+window.addEventListener('load', () => {
+  // scrollY의 값이 main 요소의 높이보다 크면 button__wrap 요소 안보이게 하기
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > main.scrollHeight - window.innerHeight) {
+      buttonWrap.style.display = 'none';
+    } else {
+      buttonWrap.style.display = 'flex';
+    }
+  });
+});
 
 // 상품 정보 렌더링
 function getImages() {

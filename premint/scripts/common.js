@@ -22,6 +22,9 @@ const header = document.querySelector('header');
 const logo = document.querySelector('#headerLogo');
 const scrollTop = document.querySelector('#scrollTop');
 const footer = document.querySelector('footer');
+const mobileMenuBtn = document.querySelector('#mobileMenuBtn');
+const mobileCloseBtn = document.querySelector('#mobileCloseBtn');
+const mobileMenu = document.querySelector('.mobile__menu');
 const fadeInElements = document.querySelectorAll('.fade-in');
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -51,6 +54,15 @@ window.addEventListener('scroll', () => {
     if (!header.classList.contains('fixed') && !header.classList.contains('mobile')) color = '_white';
     logo.src = `/premint/images/logo${color}.png`;
   }
+});
+
+// Toggle mobile menu
+mobileMenuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('open');
+});
+
+mobileCloseBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
 });
 
 // Scroll to top
