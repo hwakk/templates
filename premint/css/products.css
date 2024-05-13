@@ -52,7 +52,9 @@ main {
 }
 
 .products__category {
+  position: relative;
   padding-bottom: 15px;
+  z-index: 1;
 }
 
 .products__category > ul {
