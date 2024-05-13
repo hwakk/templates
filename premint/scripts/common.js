@@ -22,10 +22,16 @@ const header = document.querySelector('header');
 const logo = document.querySelector('#headerLogo');
 const scrollTop = document.querySelector('#scrollTop');
 const footer = document.querySelector('footer');
+const fadeInElements = document.querySelectorAll('.fade-in');
 
 window.addEventListener('DOMContentLoaded', () => {
   setHeaderLogo();
   getMainHeight();
+
+  // face-in animation
+  fadeInElements.forEach((element) => {
+    fadeIn(element);
+  });
 });
 
 window.addEventListener('resize', () => {
@@ -72,4 +78,17 @@ function getMainHeight() {
   const headerHeight = `${header.clientHeight}px`;
   const footerHeight = `${footer.clientHeight}px`;
   main.style.minHeight = `calc(100vh - ${headerHeight} - ${footerHeight} + ${mainPadding})`;
+}
+
+// FadeIn animation
+function fadeIn(element) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        element.style.animation = 'fadeIn 1s ease-out forwards';
+      }
+    });
+  });
+  
+  observer.observe(element);
 }
